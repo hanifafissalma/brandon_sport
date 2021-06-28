@@ -1,0 +1,4 @@
+[04-Apr-2021 06:28:48 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function add_action() in /home/brae8965/public_html/wp-content/plugins/hello.php:69
+Stack trace:
+#0 {main}
+  thrown in /home/brae8965/public_html/wp-content/plugins/hello.php on line 69

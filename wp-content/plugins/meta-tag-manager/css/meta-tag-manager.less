@@ -1,0 +1,159 @@
+/* .mtm.postbox { background-color:#dedede;} */
+.mtm-menu-builder { margin-bottom:15px; }
+.mtm-builder {}
+
+.mtm-field-template { display:none; visibility:hidden; }
+.mtm-fields {}
+
+.mtm-field-placeholder {
+  width:100%;
+  border:1px dashed #aaa;
+  background-color: #ddd;
+  font-size:18px;
+  padding:30px 0px;
+  color:#555;
+  text-align:center;
+  margin:10px 0px;
+  cursor:pointer;
+}
+.no-reference.no-context .mtm-field-placeholder { padding:20px 0px; }
+
+.mtm-field {
+  display:block;
+  clear:both;
+  width:100%;
+  border: 1px solid #c3c3c3;
+  background-color: #fff;
+  margin:10px 0px;
+}
+.mtm-field.closed .mtm-field-data { display:none; visibility:hidden; }
+
+.mtm-field .mtm-field-actions { clear:both; }
+
+/* Field Header / Title section */
+.mtm-field-header {
+  padding: 10px 0px;
+  cursor:pointer;
+}
+.mtm-col-sort {
+  display:block;
+  float:left;
+  width:20px;
+  height:20px;
+  padding:10px 0px 0px 10px;
+  margin:0px;
+  font-size:20px;
+  align:center;
+  cursor:move;
+  color:#dedede
+}
+.no-reference.no-context .mtm-col-sort { padding:0px 0px 0px 10px;}
+
+/* Display Title for each Card */
+.mtm-field-title { margin-left:40px; min-height:50px;}
+.no-reference.no-context .mtm-field-title { min-height:20px; }
+.mtm-field-title .mtm-meta-reference { font-size: 18px; padding-bottom:5px; }
+.mtm-field-title .mtm-meta-reference-value { display: inline-block; }
+
+.mtm-field-title .mtm-meta-context {
+  font-size:12px;
+  padding-bottom:3px;
+  color:#bcbcbc;
+  font-weight:bold;
+  font-style:italic;
+}
+.mtm-field-title .mtm-meta-context .dashicons { font-size:15px; }
+
+.mtm-field-title code { font-weight:bold; }
+.mtm-field-title code .mtm-meta-type-val, .mtm-field-title code .mtm-meta-content-value {
+  font-style:italic;
+  font-weight:normal;
+  background-color:#fefefe;
+}
+.mtm-field-title code .mtm-meta-content.hidden { display:none; }
+
+/* Header toggles */
+.mtm-field-header-toggle:hover,
+.mtm-field-section-toggle:hover {
+  cursor:pointer;
+}
+.mtm-field-header-toggle:before,
+.mtm-field-section-toggle:before {
+  float:right;
+  width: 32px;
+  height: 32px;
+  content: "\f142";
+  display: inline-block;
+  font: normal 20px/1 dashicons;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none !important;
+}
+.mtm-field.closed .mtm-field-header-toggle:before {
+  content: "\f140";
+}
+
+/* Field form data */
+.mtm-field-data {
+  /* display: none; */
+  border-top: 1px solid #e5e5e5;
+  padding:10px 10px 15px;
+}
+.mtm-field-input { margin:0px 0px 15px 0px; clear:both; }
+.mtm-field-input-label {
+  display:inline-block;
+  margin-bottom:3px;
+  padding:2px;
+  font-weight:bold;
+  display:block;
+}
+.mtm-field-input-label em { font-style:normal; background:#eaeaea; padding:1px 2px; }
+.mtm-field-input input, .mtm-field-input select {
+  width:100%;
+  padding:4px;
+  font-size:13px; /* matches selectize */
+}
+
+.mtm-field-type-custom { clear:both; }
+.mtm-field-type-custom > div {
+  clear:none;
+  float:left;
+  width:48%;
+  margin:10px 1%;
+}
+
+/* Specific type field selectors */
+.mtm-field-input.mtm-field-type-type {
+  width:20%;
+  float:left;
+  clear:none;
+}
+.mtm-field-input.mtm-field-type-value {
+  width:79% !important;
+  margin-left: 21%;
+  clear:none;
+}
+.mtm-field-input input.mtm-field-input-tag-value { float:left; clear:none; }
+
+
+
+.mtm-field-section { margin-top:20px; }
+.mtm-field-section-header { border-bottom:1px solid #e3e3e3; padding-bottom:10px; }
+.mtm-field-section-title { font-weight:bold; font-size:15px; }
+.mtm-field-section-data { margin:10px 10px 20px; padding-bottom:10px; border-bottom:1px solid #e3e3e3; }
+
+/*.mtm-builder .selectize-input { padding:4px; }*/
+.mtm-settings .selectize-dropdown-content .optgroup .option { padding-left:10px; }
+.mtm-settings .selectize-dropdown-content .optgroup .optgroup-header { font-weight:bold; }
+.mtm-settings .selectize-control.multi .selectize-input > div { background:#5cb85c; border-color:#4cae4c; color:#fff; }
+.mtm-settings .selectize-control.multi .selectize-input > div .remove { border-color:#4cae4c; }
+
+.mtm-builder .mtm-field button.mtm-field-remove { background-color:#f4e3e3; border-color:#d8c5c5; color:#565656; }
+.mtm-builder .mtm-field a.mtm-field-remove { cursor:pointer; color:#d66b6b; }
+.mtm-builder button .dashicons { padding: 3px 0px; margin-left: -5px; color: #888; }
+.mtm-builder button.mtm-add-field .dashicons { padding: 4px 0px; }
+
+.mtm-builder .mtm-actions { padding-top:15px; }
+
+@import (inline) "selectize/selectize.css";
